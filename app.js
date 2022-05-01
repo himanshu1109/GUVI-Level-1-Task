@@ -24,7 +24,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb+srv://Himanshu1109:"+process.env.pass+"@cluster0.9wrto.mongodb.net/users", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://Himanshu1109:"+process.env.PASS+"@cluster0.9wrto.mongodb.net/users", {useNewUrlParser: true, useUnifiedTopology: true});
 
 const userSchema = new mongoose.Schema ({
     username: String,
