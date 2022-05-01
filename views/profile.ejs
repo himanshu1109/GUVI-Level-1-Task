@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1 class="display-3">Profile</h1>
+    <hr>
+    <p><b>Age : </b><%=userP.age%></p>
+    <hr>
+    <p><b>Gender : </b><%=userP.gender%></p>
+    <hr>
+    <p><b>DOB : </b><%=userP.dob%></p>
+    <hr>
+    <p><b>Mobile : </b><%=userP.mobile%></p>
+    <hr>
+    
+    <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+    <a class="btn btn-dark btn-lg" href="/submit" role="button">Update</a>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

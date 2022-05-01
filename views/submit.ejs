@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <h1 class="display-3">Profile</h1>
+
+    <form action="/submit" method="POST">
+
+      <div class="form-group">
+        <input type="number" class="form-control text-center" name="age" placeholder="Age (in Years)">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control text-center" name="gender" placeholder="Gender (Male/Female/Other)">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control text-center" name="dob" placeholder="Date of Birth (in DD/MM/YY)">
+      </div>
+      <div class="form-group">
+        <input type="number" class="form-control text-center" name="mobile" placeholder="Mobile">
+      </div>
+      <button type="submit" class="btn btn-dark">Update</button>
+    </form>
+
+
+  </div>
+</div>
+<%- include('partials/footer') %>
